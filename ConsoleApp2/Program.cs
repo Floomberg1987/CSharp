@@ -13,7 +13,6 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            EFDB();
             ADONET();
             Console.ReadLine();
         }

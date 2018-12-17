@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Security;
 
 namespace ConsoleApp2
 {
@@ -13,7 +14,8 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            ADONET();
+            string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+            Console.WriteLine(userName);
             Console.ReadLine();
         }
         static void EFDB()
